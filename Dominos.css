@@ -1,0 +1,536 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --maincolor: rgb(35, 94, 172);
+    --color: rgb(107, 199, 211);
+}
+
+/*Navigation bar*/
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 40px;
+    background-color: var(--maincolor);
+
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.nav {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 9px;
+
+}
+
+.account {
+    color: white;
+    padding: 3px;
+    letter-spacing: .5px;
+}
+
+.login a {
+    color: var(--color);
+    text-decoration: none;
+    padding: 3px;
+    font-weight: 450;
+}
+
+.user i {
+    color: white;
+    font-size: 30px;
+}
+
+.user {
+    margin-right: 8px;
+}
+
+.vertical {
+    border-left: 1px solid var(--color);
+    height: 26px;
+    margin-right: 18px;
+}
+
+/* main */
+.boxes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 32rem;
+}
+
+/*right secction*/
+.right {
+    cursor: pointer;
+    width: 50%;
+    background: url("domino.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: relative;
+    top: 40px;
+    z-index: -1;
+}
+
+/*left section*/
+
+.left {
+    height: 100%;
+    width: 57%;
+    background-color: rgba(213, 218, 219, 0.479);
+
+}
+
+.left1 {
+    height: 70%;
+    width: 88%;
+
+}
+
+.left2 {
+    padding-top: 110px;
+    padding-left: 70px;
+    padding-bottom: 1%;
+}
+
+.logo img {
+    height: 45px;
+    width: 280px;
+}
+
+.content {
+    padding-top: 10px;
+    line-height: 30px;
+    width: 80%;
+    color: rgb(112, 108, 108);
+    font-size: 16px;
+    font-family: sans-serif;
+    letter-spacing: .5px;
+}
+
+.order {
+    color: rgb(49, 105, 179);
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 550;
+    margin-top: 35px;
+}
+
+.order span {
+    cursor: pointer;
+}
+
+.order span input {
+    cursor: pointer;
+}
+
+#order2 {
+    position: relative;
+    border-radius: 100%;
+    border: 1px solid;
+    background-color: var(--maincolor);
+    margin-left: 9px;
+}
+
+#order1 {
+    position: relative;
+    top: 2px;
+    height: 14px;
+    width: 14px;
+}
+
+#order3 {
+    position: relative;
+    border-radius: 100%;
+    border: 1px solid;
+    background-color: var(--maincolor);
+}
+
+#order4 {
+    position: relative;
+    top: 2px;
+    height: 14px;
+    width: 14px;
+}
+
+.logo1 img {
+    height: 18px;
+    width: 11px;
+    margin-left: 10px;
+}
+
+button {
+    display: flex;
+    background-color: rgb(24, 170, 24);
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-left: 180px;
+    cursor: pointer;
+}
+
+button img {
+    padding-right: 5px;
+    height: 15px;
+}
+
+.textbox input {
+    border: none;
+    margin-left: 5px;
+}
+
+.textbox {
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    border: .5px solid rgb(159, 201, 240);
+    border-radius: 2px;
+    width: 500px;
+    height: 45px;
+    background-color: white;
+}
+
+.textbox:hover {
+    cursor: pointer;
+}
+
+.container {
+    height: 150px;
+    width: 710px;
+    background: url("search.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.textbox ::placeholder {
+    color: rgb(103, 178, 212);
+}
+
+.offer {
+    width: 100%;
+    height: 160px;
+}
+
+.offer1 {
+    margin-top: 30px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.offer1 span img {
+    height: 95px;
+    width: 170px;
+    border: .5px dotted gray;
+}
+
+#offer2 {
+    color: rgba(35, 94, 172, 0.781);
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.last {
+    margin-top: 50px;
+    height: 210px;
+    width: 100%;
+}
+
+.last1 {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(34, 46, 58);
+}
+
+.last1 img {
+    height: 40px;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.last3 {
+    width: 100%;
+    height: 60px;
+    background: rgb(26, 39, 53);
+    border-top: 1px dotted rgb(82, 98, 116);
+}
+
+.last2 {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftside ul {
+    display: flex;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.leftside ul li {
+    list-style: none;
+    color: rgb(128, 151, 175);
+    padding-left: 30px;
+    font-size: 13px;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 42px;
+    right: 140px;
+}
+
+.rightside .app {
+    position: relative;
+    left: 40px;
+    top: 10px;
+    color: rgb(128, 151, 175);
+}
+
+.last3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(90, 116, 146);
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.last3 #last4 {
+    padding: 4px;
+    color: rgb(53, 73, 95);
+}
+
+.last5 {
+    position: absolute;
+}
+
+#last6 img {
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+
+@media only screen and (max-width:1348px) and (min-width:709px) {
+    .right {
+        background-size: contain;
+        background-position: top;
+    }
+
+    .boxes {
+        height: 29rem;
+    }
+
+    #last6 img {
+        bottom: 500px;
+    }
+}
+
+@media only screen and (max-width:1134px) and (min-width:709px) {
+    .textbox {
+        width: 320px;
+    }
+
+    button {
+        margin-left: 4px;
+        padding: 4px 5px;
+        font-weight: 500;
+    }
+
+    .left2 {
+        padding-top: 80px;
+        padding-left: 40px;
+    }
+
+    .container {
+        height: 100px;
+        width: 500px;
+    }
+
+    .offer {
+        height: 120px;
+    }
+
+    .offer1 {
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+
+    .last {
+        margin-top: 20px;
+    }
+
+    .leftside ul {
+        padding-left: 3.5px;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .rightside {
+        right: 16px;
+        bottom: 50px;
+    }
+
+    .rightside .images {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .rightside .app {
+        left: 25px;
+    }
+
+    .order {
+        margin-top: 25px;
+    }
+
+    .last1 img {
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+
+    .ullist {
+        padding-top: 7px;
+    }
+
+}
+
+@media only screen and (max-width:709px) and (min-width:480px) {
+    .boxes {
+        width: 147%;
+    }
+
+    .right {
+        background-size: contain;
+        background-position: top;
+    }
+
+    .left2 {
+        padding-top: 60px;
+        padding-left: 40px;
+    }
+
+    .textbox {
+        width: 290px;
+    }
+
+    button {
+        margin-left: 4px;
+    }
+
+    .container {
+        height: 100px;
+        width: 400px;
+    }
+
+    .last1 {
+        height: 350px;
+        width: 147%;
+    }
+
+    .leftside ul {
+        flex-direction: column;
+    }
+
+    .ullist {
+        padding-top: 15px;
+    }
+
+    .last3 {
+        width: 147%;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width:480px) and (min-width:290px) {
+    .boxes {
+        width: 147%;
+        height: 26rem;
+    }
+
+    .logo img {
+        height: 30px;
+        width: 200px;
+    }
+
+    .content {
+        line-height: 15px;
+        font-size: 10px;
+    }
+
+    .textbox {
+        width: 300px;
+        height: 30px;
+    }
+
+    button {
+        height: 25px;
+        margin-left: 4px;
+        font-size: 10px;
+    }
+
+    .rightside {
+        right: 60px;
+        top: 20px;
+    }
+
+    .right {
+        background-size: contain;
+        background-position: top;
+    }
+
+    .left2 {
+        padding-top: 60px;
+        padding-left: 40px;
+    }
+
+    .container {
+        height: 100px;
+        width: 400px;
+    }
+
+    .last1 {
+        height: 350px;
+        width: 147%;
+    }
+
+    .leftside ul {
+        flex-direction: column;
+    }
+
+    .ullist {
+        padding-top: 15px;
+    }
+
+    .last3 {
+        width: 147%;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column;
+    }
+}
